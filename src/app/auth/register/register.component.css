@@ -1,0 +1,71 @@
+/* Center the login card */
+.container {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: left;
+    box-shadow: 2px 2px 5px green;
+  }
+    
+    
+    .card {
+      padding: 20px;
+      box-shadow: 2px 2px 5px green;
+      background-color: white;
+      border-radius: 10px;
+      width: 200%;
+      max-width: 400px;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    /* Style form elements */
+    .form-label {
+      font-weight: bold;
+    }
+    
+    .form-control {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    /* Style the login button */
+    .btn-primary {
+      font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    }
+    
+    /* Style the "click to sign-in" link */
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      text-decoration: none;
+      color:#3300b3;
+    }
+    
+    /* Change link color on hover */
+    a:hover {
+      color: #b30012;
+    }
+    
+    

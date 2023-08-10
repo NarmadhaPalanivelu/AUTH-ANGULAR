@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+<div class="col-md-6">
+  <div class="card">
+    <div class="text-center">
+      <h3>REGISTRATION </h3>
+      
+
+    </div>
+    <br>
+    
+    <form>
+      <form [formGroup]="registerForm">
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Fullname</label>
+          <br>
+          <input formControlName="fullname" type="text" class="form-control" id="exampleInputPassword1">
+          <span class="text-danger"  *ngIf="registerForm.controls['fullName']?.errors!['required']===true ?? false">
+           
+        </span>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+          <br>
+          <input formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <br>
+          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          <div *ngIf="registerForm.get('email')?.hasError('invalidEmail') && registerForm.get('email')?.touched" class="error-message">
+            {{ registerForm.get('email')?.getError('invalidEmail') }}          </div>
+
+          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <br>
+          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+          
+          <div *ngIf="registerForm.get('password')?.hasError('pattern') && registerForm.get('password')?.touched" class="error-message">
+          </div>
+        </div>
+        
+
+        <br>
+        <!-- <button type="submit" class="btn btn-primary">signup</button> -->
+        <button type="submit" class="btn-primary" (click)="register($event)">REGISTER</button>
+      </form>
+    </form>
+
+    <a style="color:green;margin-top:10px" routerLink="/login">
+     CLICK TO LOGIN!!
+    </a>
+  </div>
+</div>
+  </div>
