@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+Basically, It is a registration and login page using angular and i created this login and registration  componenents inside the auth module. The data(which is given by the user will be stored in the JSON SERVER). 
+To run Json server-----localhost:3000
+REMEMBER: we need to open two terminal one is to run front end using--- ng serve and another terminal to run json server using this command--- json-server --watch db.json
+
